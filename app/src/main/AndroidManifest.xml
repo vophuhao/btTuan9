@@ -14,25 +14,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Bttuan9"
+        android:theme="@style/Theme.BT8_28_03_25"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ViewFlipperCircleIndicator.ViewFlipperCircleIndicator2"
+            android:name=".ViewFlipper.SliderView.SliderViewActiivity"
             android:exported="false" />
         <activity
-            android:name=".ViewFlipperCircleIndicator.ViewFlipperCircleIndicator1"
+            android:name=".ViewFlipper.ViewPager2vsIndicator3.ViewPager2_Indicator3Activity"
             android:exported="false" />
         <activity
-            android:name=".ViewFlipperCircleIndicator.ViewFlipperActivity"
+            android:name=".ViewFlipper.SlideImageWithCirleIndicatorActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewFlipperCircleIndicator.ViewFlipperCircleIndicator"
+            android:name=".ViewFlipper.SildeImageActivity"
             android:exported="false" />
         <activity
-            android:name=".FragmentViewPaper2TabLayout.Fragment_ViewPaper2_TabLayout"
+            android:name=".SearchRecylerView.IndicatorActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewWithIndicator.RecyclerViewWithIndicator"
+            android:name=".ViewPager2.ViewPager_tablayout"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

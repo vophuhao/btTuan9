@@ -1,14 +1,13 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.example.bttuan9"
+    namespace = "vn.iotstar.bt8_28_03_25"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.bttuan9"
+        applicationId = "vn.iotstar.bt8_28_03_25"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -16,7 +15,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -26,17 +27,10 @@ android {
             )
         }
     }
-    buildFeatures{
-        viewBinding = true
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-
 }
 
 dependencies {
@@ -45,15 +39,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation("com.github.bumptech.glide:glide:4.16.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("me.relex:circleindicator:2.1.6")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:3.12.0")
-    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
-    implementation("me.relex:circleindicator:2.1.6")
-
+    implementation(libs.glide)
+    implementation(libs.circle.indicator)
+    implementation(libs.retrofit2.converter.gson)
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.autoimageslider)
 }

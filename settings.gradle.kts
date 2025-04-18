@@ -16,10 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io")
+        maven { url = uri("https://maven.scijava.org/content/repositories/public/") }
     }
 }
 
-rootProject.name = "bttuan9"
+rootProject.name = "BT8_28_03_25"
 include(":app")
  
